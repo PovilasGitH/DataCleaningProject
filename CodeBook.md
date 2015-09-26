@@ -1,47 +1,30 @@
----
-title: "CodeBook"
-author: "Povilas"
-date: "September 26, 2015"
----
 
-# "Getting and Cleaning Data" course project #
+# "Getting and Cleaning Data" course project 
 
 There is presented sequence of actions need to clean up the data. 
 
-The project data can be dowloaded from there: 
-   https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+The project data can be dowloaded from [here]  (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
-  More detailed  information can be find there:
-  http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+  More detailed  information can be found [here]( http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
   
- Data transformation and cleaning script run_analysis.r script performs such action:
-  1.  Read files from directory named 'Data' which is saved in the same direcory and scrip run_analysis.r
-  2.  Reading is executed in such way:
+ Data transformation and cleaning script *run_analysis.r*  performs such action:
+  1.  Read files from directory named 'Data' which is saved in the same directory as the scrip *run_analysis.r*
+  2.  The data of source files have been read into such variables:
+       - X_train.txt ->  *TrData*
+       - y_train.txt ->  *TrLabel*
+       - subject_train.txt -> *TrSubject*
+       - X_test.txt -> *TsData*
+       - y_test.txt ->  *TsLabel*
+       - subject_test.txt -> *TsSubject*
+       - features.txt -> *FeaturesData*
+       - activity_labels.txt -> *ActivityData*
+  3. Next data sets in training variables  and test variables are joined.
+  4. Data columns which contains mean and standart deviation values are filtered. All columns names of the data set can be found [here](https://github.com/PovilasGitH/DataCleaningProject/blob/master/Data/features.txt)
+  5. Columns names are set to the observations data set data and modified by removing symbols: "-", "(",")" and changing words *mean*, *std to *Mean* and *Std* respectively.
+  6. Activity names are assined to activity indices
+  7. Variables which contains activity names and subject indices are join to main observation data set.
+  8. File *cleaned_data.txt* with cleaned data  is created 
+  9. File *calculated_average_data.txt* from calculated averages on all variables by all subject and activity is created.
 
----
- | Source file   | Variable  | Description |
- | ------------ | --------- | ----------- |
- | "X_train.txt"|"TrData"    |             |       
- |"y_train.txt"| "TrLabel"  |             |   
- 
----
 
 
-
-This file describes the variables, the data, and any transformations or work that I have performed to clean up the data.
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r}
-summary(cars)
-```
-
-You can also embed plots, for example:
-
-```{r, echo=FALSE}
-plot(cars)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

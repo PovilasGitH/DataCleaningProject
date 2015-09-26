@@ -2,8 +2,33 @@
 title: "CodeBook"
 author: "Povilas"
 date: "September 26, 2015"
-output: html_document
 ---
+
+# "Getting and Cleaning Data" course project #
+
+There is presented sequence of actions need to clean up the data. 
+
+The project data can be dowloaded from there: 
+   https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+  More detailed  information can be find there:
+  http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+  
+ Data transformation and cleaning script run_analysis.r script performs such action:
+  1.  Read files from directory named 'Data' which is saved in the same direcory and scrip run_analysis.r
+  2.  Reading is executed in such way:
+
+---
+ | Source file   | Variable  | Description |
+ | ------------ | --------- | ----------- |
+ | "X_train.txt"|"TrData"    |             |       
+ |"y_train.txt"| "TrLabel"  |             |   
+ 
+---
+
+
+
+This file describes the variables, the data, and any transformations or work that I have performed to clean up the data.
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 

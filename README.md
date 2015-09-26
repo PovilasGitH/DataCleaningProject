@@ -7,7 +7,7 @@ The result of this project is the creation of the script *run_analysis.R*. This 
 - Data for the script can be downloaded [here] (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 - They must be unziped and saved into the directory named "data"
 - *run_analysis.R* script must be saved in the same directory as the directory "data"
-- Working directory must be chaged the directory  where *run_analysis.R* is saved
+- Working directory must be changed to the directory  where *run_analysis.R* is saved
 - The script can be run in RStudio by the command `source("run_analysis.R")`
 
 ## Results of the script

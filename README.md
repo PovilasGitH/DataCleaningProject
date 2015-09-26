@@ -12,7 +12,8 @@ The result of this project is the creation of the script *run_analysis.R*. This 
 
 ## Results of the script
 Two files will be created in the working directory:
--*cleaned_data.txt* : It contains cleaned and transformed data from the sources mentioned above
--*calculated_average_data.txt* : It contains agregated data, which are calculated from the same data as in *cleaned_data.txt* by calculating mean for all variable by every subject observed and activiy type.
+
+- *cleaned_data.txt* : It contains cleaned and transformed data from the sources mentioned above
+- *calculated_average_data.txt* : It contains agregated data, which are calculated from the same data as in *cleaned_data.txt* by calculating means for all variable by every subject observed and activiy type.
 
 

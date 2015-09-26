@@ -8,7 +8,7 @@ The project data can be dowloaded from [here]  (https://d396qusza40orc.cloudfron
   More detailed  information can be found [here]( http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
   
  Data transformation and cleaning script *run_analysis.r*  performs such action:
-  1.  Reads files from directory named 'data' which is saved in the same directory as the scrip *run_analysis.r*
+  1.  Reads files from directory named 'data' which is saved in the same directory as the script *run_analysis.r*
   2.  The data of source files have been read into such variables:
        - X_train.txt ->  *TrData*
        - y_train.txt ->  *TrLabel*

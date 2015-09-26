@@ -20,7 +20,7 @@ The project data can be dowloaded from [here]  (https://d396qusza40orc.cloudfron
        - activity_labels.txt -> *ActivityData*
   3. Next data sets in training variables  and test variables are joined.
   4. Data columns which contains mean and standart deviation values are filtered. All columns names of the data set can be found [here](https://github.com/PovilasGitH/DataCleaningProject/blob/master/Data/features.txt)
-  5. Columns names are set to the observations data set data and modified by removing symbols: "-", "(",")" and changing words *mean*, *std to *Mean* and *Std* respectively.
+  5. Columns names are set to the observations data set data and modified by removing symbols: "-", "(",")" and changing words *mean*, *std* to *Mean* and *Std* respectively.
   6. Activity names are assined to activity indices
   7. Variables which contains activity names and subject indices are join to main observation data set.
   8. File *cleaned_data.txt* with cleaned data  is created 
